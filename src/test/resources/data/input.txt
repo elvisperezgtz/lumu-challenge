@@ -1,0 +1,1 @@
+In this version, we have created separate methods for specific tasks such as file reading, word extraction, word counting, word frequency calculation and word frequency histogram display. This makes the code more modular and easier to understand and maintain.
