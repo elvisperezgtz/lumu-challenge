@@ -19,6 +19,7 @@ public class MyOwnWordCounter {
         String fullPath = "src/test/resources/data/".concat(fileName);
 
         try {
+            System.out.println("\n\nAnalyzing the file " + fileName+": ");
             String content = readFile(fullPath).trim();
             String[] words = extractWords(content);
 
