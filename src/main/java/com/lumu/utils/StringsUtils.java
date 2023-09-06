@@ -1,7 +1,5 @@
 package com.lumu.utils;
 
-import com.lumu.user_interfaces.WordCounterUI;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;

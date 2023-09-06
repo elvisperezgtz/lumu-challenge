@@ -7,10 +7,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.logging.Logger;
 
 public class MyOwnWordCounter {
-    private static final Logger LOGGER = Logger.getLogger(MyOwnWordCounter.class.getName());
 
     public static void main(String[] args) {
         analyzeText("input2.txt");
@@ -33,8 +31,6 @@ public class MyOwnWordCounter {
             Map<String, Integer> wordFrequencies = calculateWordFrequencies(words);
             List<Map.Entry<String, Integer>> sortedEntries = new ArrayList<>(wordFrequencies.entrySet());
             sortedEntries.sort((entry1, entry2) -> entry2.getValue().compareTo(entry1.getValue()));
-
-
             displayWordFrequencyHistogram(sortedEntries);
 
         } catch (IOException e) {
